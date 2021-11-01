@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ORMLite snippet opendb and readuncommited</Title>
+			<Description>Open db using and read uncommited isolation level using</Description>
+			<Author>Stark Botha</Author>
+		</Header>
+		<Snippet>
+			<Code Language="">
+				<![CDATA[using (var db = dbFactory.Open())
+				{
+					using (var tran = db.BeginTransaction(System.Data.IsolationLevel.ReadCommitted))
+					{
+                    
+					}
+				}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
